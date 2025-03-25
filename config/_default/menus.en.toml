@@ -29,11 +29,10 @@
   pageRef = "categories"
   weight = 30
 
-#[[main]]
-#  name = "example sub-menu 2"
-#  parent = "Parent"
-#  pageRef = "posts"
-#  weight = 20
+[[main]]
+ name = "About"
+ pageRef = "about"
+ weight = 40
 
 #[[subnavigation]]
 #  name = "An interesting topic"
