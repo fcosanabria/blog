@@ -1,64 +1,99 @@
 ---
 date: 2025-04-24
 draft: false
-title: "Cambiando de macOS a Linux"
-description: "---"
+featureimage: https://dropsharebluewhale.blob.core.windows.net/dropshare/005.png
+title: "Cambiando de macOS a Linux: Mi experiencia personal"
+description: "Mi viaje de migración desde macOS a Linux como DevOps/SRE, incluyendo las herramientas que estoy usando y las alternativas que he encontrado."
 tags: ["linux", "productivity"]
 ---
 
-# Migrando de Linux
+# Mi viaje migrando de macOS a Linux
 
-Estoy intentando moverme de macOS a Linux. Siento que macOS ya no me agrega nada más, a pesar de que sigue siendo un buen sistema operativo. Me sigue gustando usarlo y demás, pero ya me cansé un poco. Quiero volver a usar Linux como mi sistema operativo principal. El problema con esto, es que todavía voy a seguir usando.
+Después de años como usuario de Apple, finalmente tomé la decisión: estoy migrando de macOS a Linux. Aunque macOS sigue siendo un excelente sistema operativo, he llegado a un punto donde siento que ya no me aporta nada nuevo. Me gusta usarlo, pero necesito un cambio, y Linux es la el way to go. Tengo años alrededor de 6 años haber usado Linux como mi sistema operativo principal, y es justo el momento de regresar.
 
-Me gusta este [blog](https://wstyler.ucsd.edu/posts/macos_to_linux_whats_better.html) sobre la migración, es relativamente nuevo y es relevante todavía en muchos aspectos.
+Mi nueva máquina llega pronto a mis manos; por lo que este post es una reflexión de lo que haré cuando ya pueda instalar Linux a mi nueva computadora.
 
-En este mismo blog se encuentra al final otro sobre las cosas que más extraña al persona sobre macOS. Devonthink siendo la primera. 
+Si vos también estás considerando este salto, te comparto mi experiencia y los desafíos que estoy enfrentando en este proceso.
 
+Me inspiré en gran parte por [este blog de Will Tyler](https://wstyler.ucsd.edu/posts/macos_to_linux_whats_better.html) sobre su migración, que aunque fue escrito en el 2023, sigue siendo muy relevante. Al final del mismo artículo, él menciona las cosas que más extraña de macOS, siendo DevonThink la primera - y comparto totalmente ese sentimiento.
 
-## Las Apps que voy a tener que migrar
+## Mapa de ruta: Las apps que necesito sustituir
 
-Existen distintas categorías sobre las aplicaciones que voy a tener que buscar, y que pontencialmente voy a usar. Desde aplicaciones de notas hasta el Shell en mi terminal. Y justo acá las voy enumerar por categoría: 
+Una de las partes más desafiantes de migrar es encontrar alternativas para las aplicaciones que usamos diariamente. A continuación detallo las categorías principales y las opciones que estoy considerando. Quizás te sirvan si estás en una situación similar.
 
-## Notes
+## Aplicaciones de notas
+
+Mi eterno dilema.
+
+Las aplicaciones de notas son probablemente mi mayor desafío en esta transición. Nunca he tenido una solución definitiva, y he saltado entre varias opciones a lo largo de los años.
 
 ### Logseq
 
-Las aplicaciones de notas es lo que probablemente más me cuesta adaptarme. Nunca tengo una solución fija. La que más me ha durado siempre ha sido Logseq, pero no me gusta como se ha hecho ahora. Quiero esperar a la versión db para empezar a usarlo. Creo que ha este punto la verdad me da igual si las notas se encuentran en mi computadora de manera local o no. Solo quiero usar Markdown y que sea facil de exportar. 
+La vieja confiable. Logseq ha sido la que más tiempo he usado. Sin embargo, no me convence completamente su evolución reciente. Prefiero esperar a la versión con base de datos para volver a considerarla nuevamente. A este punto, me importa menos si mis notas están almacenadas localmente - lo que realmente necesito es una plataforma con soporte completo para Markdown y facilidad para exportar mi contenido en el futuro. La época de "local first" ya me pasó.
 
-### SiYuan 
+Si estás usando Logseq actualmente, ¿qué te parece su reciente cambio?
 
-Me gusta demasiado como me gusta esta app. Siempre la he querido probar. [Link de descarga](https://b3log.org/siyuan/en/)
+### SiYuan: Una opción prometedora
 
-### Braindump
+Me atrae mucho SiYuan y sus características. Apenas logre poner mis manos en la instalación de Linux, voy a empezar a probarla. Si querés echarle un vistazo, podés descargarla desde su [sitio oficial](https://b3log.org/siyuan/en/). Lo que más me gusta es su enfoque en los bloques y su interfaz limpia.
 
-Voy a necesitar un lugar donde poner mis notas de manera rápida, podría usar [Braindump](https://getbraindump.app/) pero creo que mejor le doy la oportunidad a Memos.  Vamos ver que tal, el punto es tratar de usar lo que ya viene con el OS, y con las cosas que ya tengo. 
+### Notas rápidas
 
-## Launcher
+Para capturas rápidas, estaba considerando [Braindump](https://getbraindump.app/). Pero resulta que en mi Kubernetes cluster ya tengo instalado una solución similar llamada [Memos](https://www.usememos.com/), la cual es muy prometedora. Cuando la instalé, lo hice con la intención de solo experimentar, y no pretendía nada. Pero creo que debería considerarla para esta migración, estoy intentando aprovechar al máximo lo que ya viene con el sistema operativo y las herramientas que ya tengo instaladas en mi Homelab. ¿Vos qué usás para notas rápidas en Linux?
 
-Esta también es una de las partes más complicadas de este proyecto de migración. 
-## Document Database
+## El reto de reemplazar Raycast
 
-Actualmente uso Devonthink para el manejo de mis documentos. Estas bases de datos se encuentran en sincronizadas con SyncThing.
+El launcher es probablemente uno de los aspectos más complicados de este proceso de migración. En macOS, Raycast y Alfred son difíciles de superar por su velocidad y funcionalidad. De las dos aplicaciones he usado durante más tiempo Raycast, desde que salió su primera versión hasta el día de hoy. Me compré el powerpack de Alfred, pero no terminó gustando, aún así Alfred es una alternativa igual de poderosa. Aquí no competiencia de cual es mejor. Ambas son brutales.
 
-Podría intentar [Paperless-ngx](https://docs.paperless-ngx.com/). Voy a tratar de usarlo con mi NAS. Para ver que tal me va con la implementación de [CSI NFS](https://github.com/kubernetes-csi/csi-driver-nfs) que actualmente tengo instalado en mi Kubernetes cluster.
+Las alternativas en Linux que estoy evaluando son:
 
-## Terminal
+| Launcher | Pros | Contras |
+|----------|------|---------|
+| Albert | Rápido, extensible | Menos plugins disponibles que Alfred |
+| Ulauncher | Interfaz elegante, fácil de personalizar | Un poco más lento en mi experiencia |
+| Rofi | Minimalista, muy personalizable | Curva de aprendizaje más pronunciada |
 
-Me gustaría empezar a usar Kitty, ya que puede manejar imagenes sin problema. Ghostty me gusta, pero no agrega mucho la verdad. No he visto ningún tipo de diferencia en usarla con iTerm2 que usaba en macOS. 
-	Me gusta que Kitty sea enfocado para usarla con el teclado. [^1]
-Esta sección habla sobre AMD CPU + NVIDIA GPU, [referencia](https://sw.kovidgoyal.net/kitty/overview/#design-philosophy).
-## Shell
+¿Tenés alguna recomendación para un launcher que se acerque a la experiencia de Alfred?
 
-Voy a seguir usando ZSH. Todas esas configuraciones en mi `.zshrc` que han sido reunidas a lo largo de los años no me gustaría dejarlas atrás. 
-## Code Editor
+## Sustituyendo DevonThink
 
-Me gustaría empezar a usar KDevelop para Python y Kate para todo lo demás. Me gustaría dejar de utilizar VSCode. 
-- También podría empezar a usar Zed. 
-- Jetbrains IDEs también son una excelente opción. Pero primero quiero probar KDevelop. 
-- Y justo mientras escribia esta nota me topé con este [blog](https://akselmo.dev/posts/how-i-use-kate-editor/) en Reddit.
+Actualmente uso DevonThink para gestionar mis documentos, con las bases de datos sincronizadas a través de SyncThing hacía mi Asustor NAS. Encontrar un reemplazo adecuado para esta herramienta ha sido complicado.
 
-## Fonts
+Estoy considerando seriamente [Paperless-ngx](https://docs.paperless-ngx.com/) como alternativa. Planeo implementarlo con mi NAS, aprovechando la instalación de [CSI NFS](https://github.com/kubernetes-csi/csi-driver-nfs) que ya tengo configurada en mi cluster de Kubernetes. Si has usado Paperless-ngx, me encantaría conocer tu experiencia, especialmente si vienes de DevonThink.
 
-Estoy probando [Monaspace](https://monaspace.githubnext.com/) de Github, Argon flavor. Y me gustaría probar [0xProto](https://github.com/0xType/0xProto). [IBM Plex Mono](https://github.com/IBM/plex) también es una opción bastante atractiva.
+## Kitty como alternativa a Ghostty y iTerm2
 
-[^1]: [Design philosophy](https://sw.kovidgoyal.net/kitty/overview/#design-philosophy)
+Me he decidido por Kitty como mi terminal en Linux, principalmente porque puede manejar imágenes sin problemas. Ghostty también me parece bien, pero sinceramente no he notado grandes diferencias respecto a iTerm2 que usaba en macOS.
+
+Lo que más me atrae de Kitty es su enfoque en el uso del teclado, lo que promete mejorar mi productividad. [^1]
+
+Creo que podría ir probando Kitty en macOS mientras llega mi máquina.
+
+## Shell: Fiel a ZSH
+
+Voy a seguir usando ZSH. Todas esas configuraciones en mi `.zshrc` que he acumulado durante años son demasiado valiosas para dejarlas atrás. La buena noticia es que la transición de esta parte ha será prácticamente transparente.
+
+## Editor de código: Explorando nuevas opciones
+
+En lugar de seguir con VSCode, estoy explorando alternativas nativas de Linux:
+
+- **KDevelop para Python**: Me gusta su integración con el lenguaje y las herramientas de análisis
+- **Kate para todo lo demás**: Un editor liviano pero potente
+- **Zed**: Una opción prometedora con buen equilibrio entre simplicidad y funcionalidad
+- **IDEs de JetBrains**: Siempre una excelente opción, aunque más pesadas
+
+Mientras escribía esta nota, encontré este interesante [blog sobre cómo usar Kate como editor principal](https://akselmo.dev/posts/how-i-use-kate-editor/) que me dio algunas ideas para configurarlo a mi gusto.
+
+## Fonts: Buscando la tipografía perfecta
+
+Estoy probando [Monaspace](https://monaspace.githubnext.com/) de GitHub, específicamente la variante Argon. También tengo en mi lista para probar [0xProto](https://github.com/0xType/0xProto) e [IBM Plex Mono](https://github.com/IBM/plex), ambas con excelente legibilidad para sesiones largas.
+
+## Un trabajo en progreso
+
+Esta migración es un proceso continuo, no un evento único. Cada día descubro nuevas herramientas o configuraciones que mejoran mi experiencia. La flexibilidad de Linux me permite crear un entorno de trabajo completamente adaptado a mis necesidades.
+
+Iré modificando este blog según me vayan surgiendo nuevos caminos.
+
+¿Has migrado recientemente de macOS a Linux? ¿Qué aplicaciones te costó más reemplazar?
+
+[^1]: [Kitty's Design philosophy](https://sw.kovidgoyal.net/kitty/overview/#design-philosophy)
