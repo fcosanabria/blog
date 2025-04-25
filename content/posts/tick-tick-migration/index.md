@@ -2,7 +2,9 @@
 date: 2024-12-14
 draft: false
 title: "TickTick Migration"
-description: "Why is so hard to get our of TickTick? "
+description: "Why is so hard to get our of TickTick?"
+series: ["Building my Digital Garden"]
+tags: ["hugo", "productivity"]
 ---
 
 It's imposible to get out from TickTick. 
