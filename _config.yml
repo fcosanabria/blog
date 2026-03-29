@@ -6,14 +6,14 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: FrostyX's blog
-email: frostyx@email.cz
+title: Francisco's blog
+email: fsanabria@mm.st
 description: > # this means to ignore newlines until "baseurl:"
-  Personal blog of Jakub Kadlčík (aka FrostyX)
+  No description for this moment
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://frostyx.cz" # the base hostname & protocol for your site
-twitter_username: frostyx
-github_username:  frostyx
+url: "https://blog.fcosanabria.com" # the base hostname & protocol for your site
+twitter_username: piktonus97x
+github_username:  fcosanabria
 permalink: /posts/:title
 
 plugins:

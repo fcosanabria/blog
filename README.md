@@ -1,6 +1,3 @@
-# frostyx.github.io
-
-<http://frostyx.cz/>
 
 
 ## Write a post

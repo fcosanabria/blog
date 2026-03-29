@@ -24,8 +24,8 @@ body
 
 ul.nav a:hover
 {
-	color: black !important;
-	background-color: white !important;
+	color: #c5c5d5 !important;
+	background-color: #2f2f2f !important;
 }
 
 #posthead
@@ -33,12 +33,12 @@ ul.nav a:hover
 	margin-top: -10px;
 	margin-bottom: 20px;
 	padding-bottom: 10px;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #2f2f2f;
 }
 
 #posthead a
 {
-	color: black !important;
+	color: #c5c5d5 !important;
 }
 
 #content
@@ -117,4 +117,200 @@ blockquote {
 
 blockquote li {
     margin-left: -25px;
+}
+
+/* ==============================
+   Dark Mode - Bootstrap Overrides
+   ============================== */
+
+/* Body & general text */
+body {
+    background-color: #1b1b1b;
+    color: #c5c5d5;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1b1b1b;
+    border-color: #2f2f2f;
+}
+
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #d0d0e0 !important;
+}
+
+.navbar-nav > li > a {
+    color: #c5c5d5 !important;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+    color: #7b9ec2 !important;
+    background-color: transparent !important;
+}
+
+.navbar-toggle {
+    border-color: #2f2f2f;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #c5c5d5;
+}
+
+.navbar-collapse {
+    border-color: #2f2f2f;
+}
+
+/* Page header */
+.page-header {
+    border-bottom-color: #2f2f2f;
+    color: #d0d0e0;
+}
+
+/* Tables */
+.table > thead > tr > th,
+.table > tbody > tr > td {
+    border-top-color: #2f2f2f;
+    color: #c5c5d5;
+}
+
+.table > thead > tr > th {
+    border-bottom-color: #3d3d3d;
+    color: #888888;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #242424;
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: #2a2a2a;
+}
+
+/* Buttons - tag buttons */
+.btn-default {
+    background-color: #2f2f2f;
+    border-color: #3d3d3d;
+    color: #c5c5d5;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
+    background-color: #3d3d3d;
+    border-color: #4d4d4d;
+    color: #d0d0e0;
+}
+
+/* Links */
+a {
+    color: #7b9ec2;
+}
+
+a:hover,
+a:focus {
+    color: #9bb8d8;
+}
+
+/* Horizontal rules */
+hr {
+    border-top-color: #2f2f2f;
+}
+
+/* Footer */
+.footer {
+    background-color: #1b1b1b;
+    border-top: 1px solid #2f2f2f;
+}
+
+.text-muted {
+    color: #888888 !important;
+}
+
+.text-muted a {
+    color: #7b9ec2;
+}
+
+/* Form controls (search, inputs) */
+.form-control {
+    background-color: #242424;
+    border-color: #3d3d3d;
+    color: #c5c5d5;
+}
+
+.form-control:focus {
+    border-color: #7b9ec2;
+    box-shadow: none;
+}
+
+/* Panels */
+.panel {
+    background-color: #242424;
+    border-color: #2f2f2f;
+}
+
+.panel-default > .panel-heading {
+    background-color: #2f2f2f;
+    border-color: #3d3d3d;
+    color: #c5c5d5;
+}
+
+/* Wells */
+.well {
+    background-color: #242424;
+    border-color: #2f2f2f;
+}
+
+/* List groups */
+.list-group-item {
+    background-color: #242424;
+    border-color: #2f2f2f;
+    color: #c5c5d5;
+}
+
+/* Callouts */
+.bs-callout {
+    border-color: #2f2f2f;
+    background-color: #242424;
+}
+
+/* Dropdown menus */
+.dropdown-menu {
+    background-color: #242424;
+    border-color: #3d3d3d;
+}
+
+.dropdown-menu > li > a {
+    color: #c5c5d5;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    background-color: #2f2f2f;
+    color: #d0d0e0;
+}
+
+/* Code (prettify override) */
+pre.prettyprint {
+    background-color: #242424 !important;
+    border-color: #2f2f2f !important;
+    color: #c5c5d5;
+}
+
+/* Font Awesome icons inherit text color */
+.fa {
+    color: inherit;
+}
+
+/* Selection */
+::selection {
+    background-color: #3d3d4d;
+    color: #e0e0f0;
+}
+
+::-moz-selection {
+    background-color: #3d3d4d;
+    color: #e0e0f0;
 }

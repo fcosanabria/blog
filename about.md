@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+<!-- TODO: Work on this part -->
+
 {% include about/me.html %}
 
 {% comment %}
