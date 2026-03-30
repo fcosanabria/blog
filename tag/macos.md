@@ -1,6 +1,6 @@
 ---
 layout: tag
-title: "Tag: desktop"
-tag: desktop
+title: "Tag: macos"
+tag: macos
 robots: noindex
 ---
