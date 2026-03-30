@@ -3,7 +3,7 @@ layout: post
 date: 2026-03-28
 title: "Cambiando de macOS a Linux: Mi experiencia personal"
 lang: es
-tags: linux, macos, productivity
+tags: linux macos productivity
 ---
 
 # Mi viaje migrando de macOS a Linux
