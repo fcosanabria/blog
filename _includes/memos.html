@@ -1,0 +1,9 @@
+{% assign sorted_memos = site.memos | sort: "date" | reverse %}
+<ul class="list-unstyled">
+  {% for memo in sorted_memos limit:include.limit %}
+  <li>
+    <small class="text-muted">{{ memo.date | date: "%b %d, %Y" }}</small>
+    <p>{{ memo.content | markdownify }}</p>
+  </li>
+  {% endfor %}
+</ul>
