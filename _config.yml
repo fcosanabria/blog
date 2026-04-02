@@ -16,6 +16,11 @@ twitter_username: piktonus97x
 github_username:  fcosanabria
 permalink: /posts/:title
 
+collections:
+  memos:
+    output: false
+    sort_by: date
+
 plugins:
   - jekyll-gist
 
