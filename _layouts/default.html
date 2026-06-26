@@ -122,5 +122,32 @@
 				$('h2, h3, h4, h5, h6').anchor()
 			})
 		</script>
+
+		<!-- Mermaid -->
+		<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+		<script>
+			(function () {
+				document.querySelectorAll('code.language-mermaid, code[data-lang="mermaid"]').forEach(function (code) {
+					var wrapper = code.closest('figure.highlight') || code.closest('pre') || code.parentElement;
+					var div = document.createElement('div');
+					div.className = 'mermaid';
+					div.textContent = code.textContent;
+					wrapper.replaceWith(div);
+				});
+				mermaid.initialize({
+					startOnLoad: false,
+					theme: 'dark',
+					themeVariables: {
+						primaryColor: '#2f2f2f',
+						primaryTextColor: '#c5c5d5',
+						primaryBorderColor: '#3d3d3d',
+						lineColor: '#7b9ec2',
+						secondaryColor: '#242424',
+						tertiaryColor: '#1b1b1b'
+					}
+				});
+				mermaid.run();
+			})();
+		</script>
 	</body>
 </html>
