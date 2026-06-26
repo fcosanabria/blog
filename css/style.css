@@ -47,6 +47,43 @@ ul.nav a:hover
 	margin-bottom: 50px;
 }
 
+.post-list
+{
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.post-list li
+{
+	margin-bottom: 6px;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #2f2f2f;
+}
+
+.post-list li:last-child
+{
+	border-bottom: none;
+}
+
+.post-list .btn-xs
+{
+	margin-left: 4px;
+}
+
+.post-list-tags
+{
+	font-size: 12px;
+	margin-left: 8px;
+	border-left: 1px solid #2f2f2f;
+	padding-left: 8px;
+}
+
+.post-list-tags a
+{
+	color: #5a5a5a;
+}
+
 #disqus_recommendations
 {
 	margin-top: 100px;
@@ -170,22 +207,29 @@ body {
 }
 
 /* Tables */
-.table > thead > tr > th,
-.table > tbody > tr > td {
-    border-top-color: #2f2f2f;
-    color: #c5c5d5;
+#content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
-.table > thead > tr > th {
-    border-bottom-color: #3d3d3d;
+#content th, #content td {
+    padding: 8px 12px;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #2f2f2f;
+}
+
+#content th {
     color: #888888;
+    font-weight: 600;
 }
 
-.table-striped > tbody > tr:nth-of-type(odd) {
-    background-color: #242424;
+#content tbody tr:nth-of-type(odd) {
+    background-color: #1e1e1e;
 }
 
-.table-hover > tbody > tr:hover {
+#content tbody tr:hover {
     background-color: #2a2a2a;
 }
 
