@@ -3,3 +3,5 @@ _site
 .jekyll-metadata
 .directory
 .claude
+.direnv
+vendor/bundle
