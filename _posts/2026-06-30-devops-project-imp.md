@@ -12,3 +12,10 @@ Nunca me imaginé que llegaría a este punto, pero aquí estoy, escribiendo sobr
 
 *Work in progress...*
 
+Primero, una de las cosas que debo de hacer, es pues el diseño de la arquitectura de la infraestructura. He tenido varias ideas, las cuales he podido confirmar usando distintos esquemas ya existentes en la misma plataforma de AWS y Azure. Por lo tanto, he decidido que la mejor opción es usar un esquema de arquitectura de microservicios, el cual me permitirá tener una infraestructura más escalable y flexible.
+
+Además, he querido usar la implementación de una aplicación ya lista, la cual me permitirá tener una base para poder trabajar y aprender más sobre la plataforma de AWS. Esta app es de Stacksimplify. Que son un grupo de desarrolladores que se dedican a crear aplicaciones y soluciones en la nube, y que tienen un repositorio en GitHub con una aplicación lista para ser desplegada en cualquier plataforma en la nube. Ya esto por defecto me ahorra un montón de tiempo.
+
+Veamos más o menos como se ve la arquitectura que quiero implementar:
+
+![diagram01](diagram01.png)
