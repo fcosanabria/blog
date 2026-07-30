@@ -44,6 +44,10 @@ ul, ol, dl, figure,
  */
 img {
     max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     vertical-align: middle;
 }
 
@@ -53,7 +57,7 @@ img {
  * Figures
  */
 figure > img {
-    display: block;
+    max-width: 100%;
 }
 
 figcaption {
