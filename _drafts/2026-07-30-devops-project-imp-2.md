@@ -3,7 +3,7 @@ layout: post
 date: 2026-07-30
 title: "DevOps Project in AWS pt. 2: Terraform"
 lang: es en
-tags: linux kubernetes aws devops
+tags: linux kubernetes aws devops terraform
 ---
 
 Seguimos con la serie del DevOps Project in AWS.
