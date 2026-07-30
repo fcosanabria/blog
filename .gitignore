@@ -4,4 +4,5 @@ _site
 .directory
 .claude
 .direnv
+.junie
 vendor/bundle

@@ -12,7 +12,7 @@ Después de años como usuario de Apple, finalmente tomé la decisión: estoy mi
 
 Mi nueva máquina llega pronto a mis manos; por lo que este post es una reflexión de lo que haré cuando ya pueda instalar Linux a mi nueva computadora.
 
-Si vos también estás considerando este salto, te comparto mi experiencia y los desafíos que estoy enfrentando en este proceso.
+Si también estás considerando este salto, te comparto mi experiencia y los desafíos que estoy enfrentando en este proceso.
 
 Me inspiré en gran parte por [este blog de Will Tyler](https://wstyler.ucsd.edu/posts/macos_to_linux_whats_better.html) sobre su migración, que aunque fue escrito en el 2023, sigue siendo muy relevante. Al final del mismo artículo, él menciona las cosas que más extraña de macOS, siendo DevonThink la primera - y comparto totalmente ese sentimiento.
 
@@ -26,11 +26,9 @@ Mi eterno dilema.
 
 Las aplicaciones de notas son probablemente mi mayor desafío en esta transición. Nunca he tenido una solución definitiva, y he saltado entre varias opciones a lo largo de los años.
 
-### Logseq
+### NeoVim
 
-La vieja confiable. Logseq ha sido la que más tiempo he usado. Sin embargo, no me convence completamente su evolución reciente. Prefiero esperar a la versión con base de datos para volver a considerarla nuevamente. A este punto, me importa menos si mis notas están almacenadas localmente - lo que realmente necesito es una plataforma con soporte completo para Markdown y facilidad para exportar mi contenido en el futuro. La época de "local first" ya me pasó.
-
-Si estás usando Logseq actualmente, ¿qué te parece su reciente cambio?
+Despues
 
 ### SiYuan: Una opción prometedora
 
@@ -46,11 +44,11 @@ El launcher es probablemente uno de los aspectos más complicados de este proces
 
 Las alternativas en Linux que estoy evaluando son:
 
-| Launcher | Pros | Contras |
-|----------|------|---------|
-| Albert | Rápido, extensible | Menos plugins disponibles que Alfred |
-| Ulauncher | Interfaz elegante, fácil de personalizar | Un poco más lento en mi experiencia |
-| Rofi | Minimalista, muy personalizable | Curva de aprendizaje más pronunciada |
+| Launcher  | Pros                                     | Contras                              |
+| --------- | ---------------------------------------- | ------------------------------------ |
+| Albert    | Rápido, extensible                       | Menos plugins disponibles que Alfred |
+| Ulauncher | Interfaz elegante, fácil de personalizar | Un poco más lento en mi experiencia  |
+| Rofi      | Minimalista, muy personalizable          | Curva de aprendizaje más pronunciada |
 
 ¿Tenés alguna recomendación para un launcher que se acerque a la experiencia de Alfred?
 
