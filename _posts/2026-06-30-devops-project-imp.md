@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2026-06-30
-update: 2026-07-30
+updated: 2026-07-30
 title: "DevOps Project in AWS pt. 1"
 lang: es en
 tags: linux kubernetes aws devops
